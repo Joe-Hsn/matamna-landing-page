@@ -1,0 +1,16 @@
+@import url("https://fonts.cdnfonts.com/css/dubai");
+:root {
+  --bs-font-sans-serif: "Dubai", sans-serif !important;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+/* ------------------------------------- BS override ------------------------------------- */
+/* ------------------------------------- navbar */
+.dropdown-item {
+  padding-right: 1.5rem !important;
+}
+.dropdown-item:hover {
+  color: var(--bs-dark) !important;
+}
