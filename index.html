@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>شعار - مطعم يفضله الجميع</title>
+    <title>مطعمنا - مطعم يفضله الجميع</title>
     <!-- bootstrap css -->
     <link
       rel="stylesheet"
@@ -423,11 +423,59 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper reviews-slider" data-aos="fade-up">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                      <div class="review">
+                        <img
+                          class="review__img"
+                          loading="lazy"
+                          src="/assets/images/per-1.jpg"
+                          alt="..."
+                        />
+                        <div class="review__content">
+                          <p class="review__text text-muted">
+                            " أكيس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري
+                            دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت. "
+                          </p>
+                          <h6 class="review__title">نرهان</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="review">
+                        <img
+                          class="review__img"
+                          loading="lazy"
+                          src="/assets/images/per-2.jpg"
+                          alt="..."
+                        />
+                        <div class="review__content">
+                          <p class="review__text text-muted">
+                            " أكيس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري
+                            دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت. "
+                          </p>
+                          <h6 class="review__title">ابراهيم</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="review">
+                        <img
+                          class="review__img"
+                          loading="lazy"
+                          src="/assets/images/per-3.jpg"
+                          alt="..."
+                        />
+                        <div class="review__content">
+                          <p class="review__text text-muted">
+                            " أكيس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري
+                            دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت. "
+                          </p>
+                          <h6 class="review__title">محمد</h6>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="swiper-pagination"></div>
                 </div>
@@ -437,11 +485,99 @@
         </div>
       </section>
       <!-- Contact us -->
-      <section class="contactus">
+      <section class="contactus pb-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h2 data-aos="fade-left" class="mb-4">اتصل بنا</h2>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-lg-6">
+              <form data-aos="fade-left" action="#" method="post">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    placeholder="فولان ابن علان"
+                    required
+                  />
+                  <label for="name">الاسم كامل *</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="example@domain.com"
+                    required
+                  />
+                  <label for="email">البريد الالكتروني *</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="tel"
+                    id="tel"
+                    placeholder="+100 000 000 000"
+                  />
+                  <label for="tel">رقم الهاتف</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="اترك رسالة هاهنا"
+                    name="message"
+                    id="message"
+                    required
+                    style="min-height: 220px; resize: none"
+                  ></textarea>
+                  <label for="message">رسالة *</label>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-warning" type="submit">ارسال</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-6">
+              <ul
+                data-aos="fade-right"
+                class="list-group list-group-flush fs-5 mb-4"
+              >
+                <li class="list-group-item bg-light">
+                  <a href="mailto:exmaple@domain.com">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    exmaple@domain.com
+                  </a>
+                </li>
+                <li class="list-group-item bg-light">
+                  <a href="tel:+100 000 000 000">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    +100 000 000 000
+                  </a>
+                </li>
+                <li class="list-group-item bg-light">
+                  <a href="#map-link">
+                    <i class="fa-solid fa-map-marker-alt me-2"></i>
+                    1234 شارع العلم, مدينة العلم, الدولة
+                  </a>
+                </li>
+              </ul>
+              <iframe
+                data-aos="fade-up"
+                class="rounded"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927756.5897719164!2d46.82252880000002!3d24.725191850000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1669665525971!5m2!1sen!2seg"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -450,9 +586,43 @@
     <!-- footer -->
     <footer class="bg-dark text-light py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="m-0">© 2023 - شعار - مطعم يفضله الجميع</p>
+        <div class="row text-center text-lg-start">
+          <div class="col-12 col-lg-6">
+            <p class="m-0">
+              © 2023 - <span class="text-warning">مطعمنا</span> - مطعم يفضله
+              الجميع
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <ul class="list-inline fs-4">
+              <li class="list-inline-item">
+                <a href="#facebook-account" class="text-light"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#twitter-account" class="text-light"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#instagram-account" class="text-light"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#linkedin-account" class="text-light"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start"
+          >
+            <button class="btn btn-outline-light rounded-circle" id="totop">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
           </div>
         </div>
       </div>
