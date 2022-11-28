@@ -195,6 +195,9 @@ body {
   background-color: var(--bs-warning);
 }
 /* contact us */
+.contactus {
+  overflow-x: hidden;
+}
 .list-group-item a {
   color: var(--bs-dark);
   text-decoration: none;
