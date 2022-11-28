@@ -10,9 +10,14 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".next",
     prevEl: ".prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 // AOS
 AOS.init({
   duration: 800,
   easing: "ease-in-out",
+  once: true,
 });

@@ -4,7 +4,25 @@
 }
 
 body {
+  background-color: var(--bs-light);
   font-family: var(--bs-font-sans-serif);
+}
+/* navbar */
+.callbacks-btn {
+  display: flex;
+}
+.callbacks-btn .btn-warning {
+  width: 100%;
+}
+.callbacks-btn .btn-outline-light {
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
 /* Hero section */
 .hero {
@@ -16,13 +34,13 @@ body {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
+.my-slide {
   position: relative;
   width: 100%;
   height: 100%;
 }
 /* swiper's inset shadow */
-.swiper-slide::before {
+.my-slide::before {
   content: "";
   z-index: 1;
   position: absolute;
@@ -40,7 +58,7 @@ body {
     #202125 100%
   );
 }
-.swiper-slide::after {
+.my-slide::after {
   content: "";
   z-index: 1;
   position: absolute;
@@ -69,7 +87,7 @@ body {
   );
   z-index: 2;
 }
-.swiper-slide img {
+.my-slide img {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,29 +99,29 @@ body {
   z-index: -1;
   aspect-ratio: 16/9;
 }
-.swiper-slide .container {
+.my-slide .container {
   height: 100%;
 }
-.swiper-slide .container .row {
+.my-slide .container .row {
   height: 100%;
   margin: 0;
 }
-.swiper-slide .container .row .col {
+.my-slide .container .row .col {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
-  padding: 1rem 0;
+  padding: 2rem 0;
   z-index: 100;
   pointer-events: none;
 }
-.swiper-slide .container .row .col .h2 {
+.my-slide .container .row .col .h1 {
   width: 100%;
 }
-.swiper-slide .container .row .col .btn {
+.my-slide .container .row .col .btn {
   pointer-events: all;
 }
-.swiper-slide .container .row .col .btn-warning {
+.my-slide .container .row .col .btn-warning {
   margin-left: 0.5rem;
 }
 .my-swiper > .container {
@@ -128,6 +146,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* reviews */
+
 /* ------------------------------------- BS override ------------------------------------- */
 /* ------------------------------------- navbar */
 .dropdown-item {
@@ -135,4 +155,14 @@ body {
 }
 .dropdown-item:hover {
   color: var(--bs-dark) !important;
+}
+.my-card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.my-card-footer .btn-warning {
+  width: 67.5%;
+}
+.my-card-footer .btn-outline-dark {
+  width: 27.5%;
 }

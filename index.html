@@ -40,7 +40,7 @@
   <body>
     <main>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-lg-4">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark py-md-4">
         <div class="container">
           <a class="navbar-brand text-warning" href="/">مطعمنا</a>
           <button
@@ -63,7 +63,10 @@
                 <a class="nav-link" href="#recipes">وصفاتنا</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#supporters">احبائنا</a>
+                <a class="nav-link" href="#services">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teammates">اعضائنا</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -103,10 +106,15 @@
                 <a class="nav-link" href="#contact-us">اتصل بنا</a>
               </li>
             </ul>
-            <button class="btn btn-warning" type="submit">
-              تسجيل الدخول
-              <i class="fa-solid fa-user ms-1"></i>
-            </button>
+            <div class="callbacks-btn">
+              <button class="btn btn-warning">
+                تسجيل الدخول
+                <i class="fa-solid fa-user ms-1"></i>
+              </button>
+              <button class="btn btn-outline-light ms-3">
+                <i class="fa-solid fa-shopping-cart"></i>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -117,41 +125,41 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide my-slide">
               <div class="container">
                 <div class="row">
                   <div class="col px-3 px-sm-0">
-                    <h3 class="h2">برجر جامبو</h3>
+                    <h3 class="h1">برجر جامبو</h3>
                     <button class="btn btn-warning">اطلب الان</button>
                     <button class="btn btn-outline-light">المزيد</button>
                   </div>
                 </div>
               </div>
-              <img src="/assets/images/pic-1.jpg" alt="pic-1" />
+              <img loading="lazy" src="/assets/images/pic-1.jpg" alt="pic-1" />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide my-slide">
               <div class="container">
                 <div class="row">
                   <div class="col px-3 px-sm-0">
-                    <h3 class="h2">سلطة فواكه</h3>
+                    <h3 class="h1">سلطة فواكه</h3>
                     <button class="btn btn-warning">اطلب الان</button>
                     <button class="btn btn-outline-light">المزيد</button>
                   </div>
                 </div>
               </div>
-              <img src="/assets/images/pic-2.jpg" alt="pic-2" />
+              <img loading="lazy" src="/assets/images/pic-2.jpg" alt="pic-2" />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide my-slide">
               <div class="container">
                 <div class="row">
                   <div class="col px-3 px-sm-0">
-                    <h3 class="h2">شطيرة بالحمة</h3>
+                    <h3 class="h1">شطيرة بالحمة</h3>
                     <button class="btn btn-warning">اطلب الان</button>
                     <button class="btn btn-outline-light">المزيد</button>
                   </div>
                 </div>
               </div>
-              <img src="/assets/images/pic-3.jpg" alt="pic-3" />
+              <img loading="lazy" src="/assets/images/pic-3.jpg" alt="pic-3" />
             </div>
           </div>
           <!-- If we need navigation buttons -->
@@ -166,63 +174,264 @@
         </div>
       </section>
       <!-- Our latest recipes -->
-      <section class="recipes">
+      <section class="recipes py-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>أخر وصفاتنا</h1>
+              <h1 data-aos="fade-left" class="mb-4">وصفاتنا</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4"></div>
-          </div>
-        </div>
-      </section>
-      <!-- Customers' reviews -->
-      <section class="reviews">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2>ماذا يقول عملاؤنا</h2>
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    طبق فول
+                    <span class="badge text-bg-danger ms-1">جديد</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات
+                    نون برواي أيدي ايست لابوريوم
+                  </p>
+                </div>
+                <div class="card-body my-card-footer">
+                  <button class="btn btn-warning">اطلب الان</button>
+                  <button class="btn btn-outline-dark">المزيد</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    فلافل
+                    <span class="badge text-bg-danger ms-1">جديد</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن
+                    ريبريهينديرأيت فوليوبتاتي فيلايت.
+                  </p>
+                </div>
+                <div class="card-body my-card-footer">
+                  <button class="btn btn-warning">اطلب الان</button>
+                  <button class="btn btn-outline-dark">المزيد</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    برجر
+                    <span class="badge text-bg-danger ms-1">جديد</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير
+                    سيتاشن يللأمكو لابورأس نيسي يت أليكيوب
+                  </p>
+                </div>
+                <div class="card-body my-card-footer">
+                  <button class="btn btn-warning">اطلب الان</button>
+                  <button class="btn btn-outline-dark">المزيد</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-8.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">برجر دبل</h5>
+                  <p class="card-text text-muted">
+                    لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج دولار
+                    سيت أميت ,كونسيكتيتور أليايت,سيت دو .
+                  </p>
+                </div>
+                <div class="card-body my-card-footer">
+                  <button class="btn btn-warning">اطلب الان</button>
+                  <button class="btn btn-outline-dark">المزيد</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Our blogs -->
-      <section class="blogs">
+      <section class="blogs pb-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>مدونتنا</h2>
+              <h1 data-aos="fade-left" class="mb-4">مقالاتنا</h1>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    طبق فول
+                    <span class="badge text-bg-warning ms-1">مقالة</span>
+                    <span class="badge text-bg-danger ms-1">جديد</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات
+                    نون برواي أيدي ايست لابوريوم
+                  </p>
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-warning w-100">قراءة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    فلافل
+                    <span class="badge text-bg-warning ms-1">مقالة</span>
+                    <span class="badge text-bg-danger ms-1">جديد</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن
+                    ريبريهينديرأيت فوليوبتاتي فيلايت.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-warning w-100">قراءة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    برجر
+                    <span class="badge text-bg-warning ms-1">مقالة</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير
+                    سيتاشن يللأمكو لابورأس نيسي يت أليكيوب
+                  </p>
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-warning w-100">قراءة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  loading="lazy"
+                  src="/assets/images/pic-8.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    برجر دبل
+                    <span class="badge text-bg-warning ms-1">مقالة</span>
+                  </h5>
+                  <p class="card-text text-muted">
+                    لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج دولار
+                    سيت أميت ,كونسيكتيتور أليايت,سيت دو .
+                  </p>
+                </div>
+                <div class="card-body">
+                  <button class="btn btn-warning w-100">قراءة</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Newsletter section -->
-      <section class="newsletter bg-dark text-light">
+      <section class="newsletter bg-dark text-light py-4">
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
               <h2>اشترك في النشرة البريدية</h2>
-              <p>احصل على أحدث العروض والوصفات</p>
-              <form>
-                <div class="input-group mb-3">
+              <p class="text-muted">احصل على أحدث العروض والوصفات</p>
+            </div>
+            <div
+              class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <form data-aos="fade-up" action="#" method="post" class="w-100">
+                <div class="input-group input-group-lg">
+                  <button class="btn btn-warning" type="submit" id="newsletter">
+                    اشترك
+                  </button>
                   <input
                     type="email"
                     class="form-control"
-                    placeholder="البريد الالكترونى"
-                    aria-label="البريد الالكترونى"
-                    aria-describedby="button-addon2"
+                    placeholder="example@domain.com"
+                    aria-label="البريد الإلكتروني"
+                    aria-describedby="newsletter"
+                    required
                   />
-                  <button
-                    class="btn btn-warning"
-                    type="submit"
-                    id="button-addon2"
-                  >
-                    اشترك
-                  </button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Customers' reviews -->
+      <section class="reviews py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 data-aos="fade-left" class="mb-4">اراء عملاؤنا</h2>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -232,18 +441,18 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>اتصل بنا</h2>
+              <h2 data-aos="fade-left" class="mb-4">اتصل بنا</h2>
             </div>
           </div>
         </div>
       </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="bg-dark text-light py-5">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <p>© 2023 - شعار - مطعم يفضله الجميع</p>
+            <p class="m-0">© 2023 - شعار - مطعم يفضله الجميع</p>
           </div>
         </div>
       </div>
