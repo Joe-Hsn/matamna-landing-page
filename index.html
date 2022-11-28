@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>شعار - مطعم يفضله الجميع</title>
     <!-- bootstrap css -->
@@ -11,6 +12,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
       integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
       crossorigin="anonymous"
+    />
+    <!-- swiper's css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- fontawesome's icons -->
     <link
@@ -34,7 +40,7 @@
   <body>
     <main>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-lg-4">
         <div class="container">
           <a class="navbar-brand text-warning" href="/">مطعمنا</a>
           <button
@@ -51,7 +57,13 @@
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#offers">عروضنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recipes">وصفاتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#supporters">احبائنا</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -65,30 +77,94 @@
                 </a>
                 <ul class="dropdown-menu bg-dark">
                   <li>
-                    <a class="dropdown-item text-light" href="#">الرياض</a>
-                  </li>
-                  <li><a class="dropdown-item text-light" href="#">دبي</a></li>
-                  <li>
-                    <a class="dropdown-item text-light" href="#">الدوحة</a>
+                    <a class="dropdown-item text-light" href="#riyadh"
+                      >الرياض</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item text-light" href="#">القاهرى</a>
+                    <a class="dropdown-item text-light" href="#dubai">دبي</a>
                   </li>
                   <li>
-                    <a class="dropdown-item text-light" href="#">الخرطوم</a>
+                    <a class="dropdown-item text-light" href="#doha">الدوحة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="#cairo"
+                      >القاهرة</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="#khartom"
+                      >الخرطوم</a
+                    >
                   </li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">اتصل بنا</a>
+              </li>
             </ul>
-            <button class="btn btn-outline-warning" type="submit">
+            <button class="btn btn-warning" type="submit">
               تسجيل الدخول
-              <i class="fa-regular fa-user ms-1"></i>
+              <i class="fa-solid fa-user ms-1"></i>
             </button>
           </div>
         </div>
       </nav>
       <!-- Hero section -->
-      <section class="hero"></section>
+      <section class="hero">
+        <!-- Slider main container -->
+        <div class="swiper my-swiper text-white">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="row">
+                  <div class="col px-3 px-sm-0">
+                    <h3 class="h2">برجر جامبو</h3>
+                    <button class="btn btn-warning">اطلب الان</button>
+                    <button class="btn btn-outline-light">المزيد</button>
+                  </div>
+                </div>
+              </div>
+              <img src="/assets/images/pic-1.jpg" alt="pic-1" />
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="row">
+                  <div class="col px-3 px-sm-0">
+                    <h3 class="h2">سلطة فواكه</h3>
+                    <button class="btn btn-warning">اطلب الان</button>
+                    <button class="btn btn-outline-light">المزيد</button>
+                  </div>
+                </div>
+              </div>
+              <img src="/assets/images/pic-2.jpg" alt="pic-2" />
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="row">
+                  <div class="col px-3 px-sm-0">
+                    <h3 class="h2">شطيرة بالحمة</h3>
+                    <button class="btn btn-warning">اطلب الان</button>
+                    <button class="btn btn-outline-light">المزيد</button>
+                  </div>
+                </div>
+              </div>
+              <img src="/assets/images/pic-3.jpg" alt="pic-3" />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="container">
+            <div class="prev btn btn-outline-warning">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="next btn btn-outline-warning">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Our latest recipes -->
       <section class="recipes">
         <div class="container">
@@ -123,7 +199,34 @@
         </div>
       </section>
       <!-- Newsletter section -->
-      <section class="newsletter"></section>
+      <section class="newsletter bg-dark text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>اشترك في النشرة البريدية</h2>
+              <p>احصل على أحدث العروض والوصفات</p>
+              <form>
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="البريد الالكترونى"
+                    aria-label="البريد الالكترونى"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-warning"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    اشترك
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Contact us -->
       <section class="contactus">
         <div class="container">
@@ -140,12 +243,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <p>© 2021 - شعار - مطعم يفضله الجميع</p>
+            <p>© 2023 - شعار - مطعم يفضله الجميع</p>
           </div>
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- swiper's script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- bootstrap's script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -158,12 +262,8 @@
       integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    >
-      // initialize AOS
-        AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
-        });
-    </script>
+    ></script>
+    <!-- custom script -->
+    <script src="script.js"></script>
   </body>
 </html>
