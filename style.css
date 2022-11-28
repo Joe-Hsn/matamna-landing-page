@@ -4,6 +4,8 @@
 }
 
 body {
+  min-width: 100vw;
+  overflow-x: hidden;
   background-color: var(--bs-light);
   font-family: var(--bs-font-sans-serif);
 }
